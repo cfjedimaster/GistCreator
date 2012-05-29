@@ -1,0 +1,31 @@
+<application>
+	<name>Gist Creator</name>
+	<author>Raymond Camden</author>
+	<version>0</version>
+	<email>raymondcamden@gmail.com</email>	
+	<description>intro.html</description>  
+	<license>license.html</license>
+	
+	<menucontributions>
+
+		<contribution target="editor">
+			<menu name="Gist Extension">
+				<action name="Create Gist" handlerid="createGist" showResponse="true" />
+			</menu>
+		</contribution>
+		<contribution target="projectview">
+			<menu name="Gist Extension">
+				<action name="Create Gist" handlerid="createGist" showResponse="true" />
+				<filters>
+					<filter type="file" />
+				</filters>
+			</menu>
+		</contribution>
+
+	</menucontributions>
+
+	<handlers>
+		<handler id="createGist" type="CFM" filename="createGist.cfm" />
+	</handlers>
+
+</application>
