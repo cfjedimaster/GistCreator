@@ -23,7 +23,10 @@ component accessors="true" {
 		
 		if(httpresult.responseheader.status_code == 201) {
 			var gistdata = deserializeJSON(httpresult.filecontent);
-			return {status:"ok", url: gistdata.html_url};
+			//Create the embed url on the fly. The Gist API doesn't specifically support this.
+			//Note - this embed URL is for all the "files" in the Gist even though we will have only one.
+			var embed = '<script src="https://gist.github.com/#gistdata.id#.js"></script>';
+			return {status:"ok", url: gistdata.html_url, embed:embed};
 		} else {
 			//todo: return info on the failure
 			return {status:"failure"};	

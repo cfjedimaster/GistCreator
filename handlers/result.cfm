@@ -8,14 +8,15 @@
 
 	<cfif application.result.status is "OK">
 		
+		<cfoutput>
 		<p>
-		Your Gist was created and may be found here:
-		</p>
-
-		<p>
-		<cfoutput>#application.result.url#</cfoutput>
+		Your Gist was created and may be found here: #application.result.url#
 		</p>
 		
+		<p>
+		You can embed your Gist with this code: <input value="#htmlEditFormat(application.result.embed)#" style="width:100%">
+		</p>
+		</cfoutput>
 	<cfelse>
 		
 		<p>
