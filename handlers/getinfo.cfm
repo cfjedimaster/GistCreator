@@ -3,7 +3,7 @@
 <cfif structKeyExists(form, "username") and structKeyExists(form, "password")>
 	<!--- First, validate --->
 	<cfif application.gistService.validate(form.username, form.password)>
-		<cfset packet = {username:form.username, password:form.password}>
+		<cfset packet = {username=form.username, password=form.password}>
 		<cfset fileWrite(expandPath("./settings.json"), serializeJSON(packet))>
 		<cfset showForm = false>
 	<cfelse>
