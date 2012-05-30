@@ -29,7 +29,7 @@ component accessors="true" {
 			return {status="ok", url= gistdata.html_url, embed=embed};
 		} else {
 			//todo: return info on the failure
-			return {status:"failure"};	
+			return {status="failure"};	
 		}
 
 	}
