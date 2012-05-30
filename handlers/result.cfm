@@ -1,3 +1,4 @@
+<cfsetting showdebugoutput="false">
 <!DOCTYPE html>
 <html>
 <head>

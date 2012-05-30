@@ -19,4 +19,7 @@ the Import option.
 
 ## Updates
 
-Based on a suggest by Andy Matthews, the extension now returns the embed url in a nice little box you can quickly cut and paste.
+5/30/2012: Scott Stroz found that gistservice.cfc was using CF10 syntax for implicit structs. I figured I might as well remove
+the other CF10 thing too. So this will now fully work in CF9+
+
+5/29/2012: Based on a suggest by Andy Matthews, the extension now returns the embed url in a nice little box you can quickly cut and paste.

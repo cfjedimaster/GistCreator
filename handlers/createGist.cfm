@@ -1,3 +1,4 @@
+<cfsetting showdebugoutput="false">
 <cfset helper = new cfcs.builderHelper(ideeventinfo)>
 <cfset runType = helper.getRunType()>
 

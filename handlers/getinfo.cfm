@@ -1,3 +1,4 @@
+<cfsetting showdebugoutput="false">
 <cfset showForm = true>
 <cfif structKeyExists(form, "username") and structKeyExists(form, "password")>
 	<!--- First, validate --->

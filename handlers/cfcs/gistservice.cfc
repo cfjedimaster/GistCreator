@@ -12,9 +12,9 @@ component accessors="true" {
 		http.setPassword(this.password);
 		http.setMethod("post");
 
-		var input = {"public":"true", "files":
+		var input = {"public"="true", "files"=
 			{
-				"#filename#":{"content":contents}
+				"#filename#"={"content"=contents}
 			}
 		};
 
