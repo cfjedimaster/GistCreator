@@ -8,7 +8,7 @@ component {
 	}
 
 	public boolean function onRequestStart(string req) {
-		setting showdebugoutput="false";
+		//setting showdebugoutput="false";
 		//Keeping this around for quick testing...
 		//structDelete(application,"githubdata");onApplicationStart();
 		return true;
