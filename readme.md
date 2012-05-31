@@ -18,6 +18,10 @@ the Import option.
 
 ## Updates
 
+5/31/2012: Instead of automatically creating the Gist, which I think is cool, we now stop first and prompt you. This allows
+you to tweak the filename, public visibility, and description. You can just submit the form though as the defaults are what
+they were before. There is no validation on the form now. Don't screw it up. The Stroz added some nice CSS too.
+
 5/30/2012: Scott Stroz found that gistservice.cfc was using CF10 syntax for implicit structs. I figured I might as well remove
 the other CF10 thing too. So this will now fully work in CF9+
 

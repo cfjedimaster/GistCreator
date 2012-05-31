@@ -43,16 +43,17 @@
 		
 	</cfif>
 
-	<cfset application.result = application.gistService.createGist(filename, text)>
-		
+	<!--- cache this for our next UI view --->
+	<cfset application.content = {filename=filename, text=text}>
+
 	<cfheader name="Content-Type" value="text/xml">
 	<cfoutput>
 	<response showresponse="true">
 	<ide url="#helper.getRootURL()#result.cfm">
-	<dialog width="455" height="300" title="Gist Result" />
+	<dialog width="455" height="350" title="Gist Details" />
 	</ide>
 	</response>
 	</cfoutput>	
-			
+	
 </cfif>
 

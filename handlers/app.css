@@ -1,6 +1,9 @@
 p {
 	font-family: Arial, Helvetica, sans-serif;
+	clear:both;
 }
 
 label {
+	width:100px;
+	float:left
 }

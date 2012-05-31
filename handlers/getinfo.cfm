@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="app.css" type="text/css" />
+	<link rel="stylesheet" href="app.css?<cfoutput>x=#createUUID()#</cfoutput>" type="text/css" />
 </head>
 
 <body>
@@ -34,8 +34,12 @@
 				
 		<form method="post">
 		<p>
-		<label for="username">Username:</label> <input type="text" id="username" name="username"><br/>
+		<label for="username">Username:</label> <input type="text" id="username" name="username">
+		</p>
+		<p>
 		<label for="password">Password:</label> <input type="password" id="password" name="password"><br/>
+		</p>
+		<p>
 		<input type="submit" value="Save Information">
 		</p>
 		</form>

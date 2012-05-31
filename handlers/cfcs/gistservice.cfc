@@ -5,14 +5,18 @@ component accessors="true" {
 	
 	variables.ROOT = "https://api.github.com";
 	
-	public any function createGist(required string filename, required string contents) {
+	public any function createGist(required string filename, required string contents, boolean public="true", string description="") {
 		var http = new http();
 		http.setURL(variables.ROOT & "/gists");
 		http.setUsername(this.username);
 		http.setPassword(this.password);
 		http.setMethod("post");
 
-		var input = {"public"="true", "files"=
+		//CF is loose with booleans, make it a string
+		var pString = "true";
+		if(!arguments.public) pString="false";
+		
+		var input = {"public"="#pString#", "description"="#arguments.description#", "files"=
 			{
 				"#filename#"={"content"=contents}
 			}

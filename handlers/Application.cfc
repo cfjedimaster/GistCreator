@@ -1,6 +1,6 @@
 component {
 
-	this.name = "gistextensionv3";
+	this.name = "gistextensionv5";
 	
 	public boolean function onApplicationStart() {
 		application.gistService = new cfcs.gistservice(); 
