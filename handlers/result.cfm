@@ -13,6 +13,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Cache-control" content="no-cache">
 	<link rel="stylesheet" href="app.css?<cfoutput>x=#createUUID()#</cfoutput>" type="text/css" />
 </head>
 
